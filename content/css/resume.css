@@ -1,0 +1,123 @@
+/* Reset default styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set page layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.introduction {
+  justify-content: space-between;
+  border-bottom: 4px solid rgba(121, 120, 120, 0.5);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin: 0 0; /* Adjust as needed */
+  font-size: 14px;
+  color: #434343;
+}
+
+.current-job-title {
+  font-size: 16px;
+  color: #434343; /* Updated font color to grey */
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Set heading styles */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #434343;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Set section styles */
+.section {
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(121, 120, 120, 0.4);
+}
+
+.section-container {
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.section-element {
+  margin-bottom: 10px;
+}
+
+.section-element-content {
+  margin-top: 5px;
+}
+p.section-element-content {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* Set paragraph styles */
+p {
+  margin-bottom: 10px;
+}
+
+/* Set link styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Set list styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+/* Set image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+td {
+  border-top: 1px solid #dddddd;
+}
