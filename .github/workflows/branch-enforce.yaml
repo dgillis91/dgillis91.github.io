@@ -1,0 +1,14 @@
+name: "check-branch"
+
+on:
+  pull_request:
+
+jobs:
+  check-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check-branch
+        if: github.base_ref == 'main' && github.head_ref != 'dev'
+        run: |
+          echo "Can only merge to main from dev."
+          exit 1
