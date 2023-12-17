@@ -3,30 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../components/JobHeader.js" type="module"></script>
     <link rel="stylesheet" href="../css/resume.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
     <title>Resume</title>
   </head>
   <body class="container">
     <!-- Intro -->
     <div class="introduction">
       <h1>David Gillis</h1>
-      <p class="current-job-title">Sr. Data Engineer</p>
+      <p class="job-title">Sr. Data Engineer</p>
 
       <!-- Contact -->
-      <div class="contact">
-        <span class="contact-item">
+      <div class="pure-g contact">
+        <span class="pure-u-1-4 contact-item">
           Phone: <a href="tel:636.448.5889">636.448.5889</a>
         </span>
-        <span class="contact-item">
+        <span class="pure-u-1-4 contact-item">
           Email: <a href="mailto:dgillis91@gmail.com">dgillis91@gmail.com</a>
         </span>
-        <span class="contact-item">
+        <span class="pure-u-1-4 contact-item">
           LinkedIn:
           <a href="https://www.linkedin.com/in/david-gillis-107b20110/">
             dgillis91
           </a>
         </span>
-        <span class="contact-item">
+        <span class="pure-u-1-4 contact-item">
           Github: <a href="https://www.github.com/dgillis91">dgillis91</a>
         </span>
       </div>
@@ -43,7 +50,7 @@
             Effective <b>data people</b> leader who focuses on creating a
             positive culture which:
           </p>
-          <ul class="section-element">
+          <ul class="section-element l-offset">
             <li id="summary-item1" class="section-element-content">
               Puts people first.
             </li>
@@ -74,7 +81,7 @@
       <section id="technologies" class="section">
         <h2 id="technologies-header">Technologies</h2>
         <div class="section-container">
-          <table class="section-element">
+          <table class="section-element pure-table pure-table-bordered">
             <thead>
               <tr>
                 <th>Category</th>
@@ -84,94 +91,80 @@
 
             <tbody>
               <tr>
-                <td class="section-element-content">Languages</td>
-                <td class="section-element-content">
-                  <p class="section-element-content">
-                    Python, SQL, Scala, C, C++, C#, JavaScript, HTML, CSS
-                  </p>
+                <td>Languages</td>
+                <td>Python, SQL, Scala, C, C++, C#, JavaScript, HTML, CSS</td>
+              </tr>
+              <tr>
+                <td>Databases</td>
+                <td>SQL Server, MySQL, PostgreSQL, MongoDB, Google Bigquery</td>
+              </tr>
+              <tr>
+                <td>Frameworks</td>
+                <td>
+                  <ul>
+                    <li>
+                      Spark, Hadoop, Kafka, Airflow, Flask, Django, React,
+                      Dataform, Dataflow, Data Fusion, Data Studio, Data Catalog
+                    </li>
+                    <li>
+                      Data Bunny, What's Up Doc, Data Dog, Data Duck, Data
+                      Dinosaur, Data "whatever google calls their other data
+                      products." At least two of those names after Data Bunny
+                      are real. I'll let you guess which ones.
+                    </li>
+                  </ul>
                 </td>
               </tr>
               <tr>
-                <td class="section-element-content">Databases</td>
-                <td class="section-element-content">
-                  <p class="section-element-content">
-                    SQL Server, MySQL, PostgreSQL, MongoDB, Google Bigquery
-                  </p>
+                <td>Viz Tools</td>
+                <td>
+                  Tableau, Power BI, Google Data Studio, D3.js, Matplotlib,
+                  Seaborn, Plotly, Excel is a viz tool right?
                 </td>
               </tr>
               <tr>
-                <td class="section-element-content">Frameworks</td>
-                <td class="section-element-content">
-                  <p class="section-element-content">
-                    Spark, Hadoop, Kafka, Airflow, Flask, Django, React,
-                    Dataform, Dataflow, Data Fusion, Data Studio, Data Catalog
-                  </p>
-                  <p class="section-element-content">
-                    Data Bunny, What's Up Doc, Data Dog, Data Duck, Data
-                    Dinosaur, Data "whatever google calls their other data
-                    products." At least two of those names after Data Bunny are
-                    real. I'll let you guess which ones.
-                  </p>
-                </td>
+                <td>Cloud</td>
+                <td>AWS, Azure, GCP, Snowflake</td>
               </tr>
               <tr>
-                <td class="section-element-content">Viz Tools</td>
-                <td class="section-element-content">
-                  <p class="section-element-content">
-                    Tableau, Power BI, Google Data Studio, D3.js, Matplotlib,
-                    Seaborn, Plotly, Excel is a viz tool right?
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td class="section-element-content">Cloud</td>
-                <td class="section-element-content">
-                  AWS, Azure, GCP, Snowflake
-                </td>
-              </tr>
-              <tr>
-                <td class="section-element-content">Tools</td>
-                <td class="section-element-content">
+                <td>Tools</td>
+                <td>
                   Git, Github (actions, et al), Azure DevOps, AWS CDK, Docker,
                   AWS CloudFormation, AWS CloudWatch, AWS CloudDeploy, JFrog
                 </td>
               </tr>
               <tr>
-                <td class="section-element-content">Data Methodologies</td>
-                <td class="section-element-content">
-                  I was born on the data bayou - let's see how many trendy data
-                  terms we can come up with: Data Inlet, Data Estuary, Data
-                  Ocean, ... But, to be serious, I build data warehouses that
-                  follow some form of domain driven design. I'm a big fan of
-                  data that is accessible by consumers and aligned with the
-                  business - pushing engineers towards understanding both the
-                  data domain and the business domain.
+                <td>Data Methodologies</td>
+                <td>
+                  I prefer data warehouses that follow some form of domain
+                  driven design. Data should be aligned with the business. This
+                  provides the most value to the business and helps push
+                  engineers towards understanding both the data domain and the
+                  business domain.
                 </td>
               </tr>
               <tr>
-                <td class="section-element-content">Other</td>
-                <td class="section-element-content">
+                <td>Other</td>
+                <td>
                   Agile (which is made for teams, teams are not made for agile),
                   Lean Startup, Design Thinking, Refactoring, TDD, Clean Code
                 </td>
               </tr>
               <tr>
-                <td class="section-element-content">
-                  Unpopular Opinions to Start Debate
-                </td>
-                <td class="section-element-content">
-                  The only actual IAC tool is Pulomi. Everything else is just
-                  Infrastructure as configuration. I like AWS the most, I think
-                  GCP is the most complex, but I think Azure is the best
-                  solution for 90% of companies. I think Excel is underrated.
-                  Python is my favorite language, but I think things in it and
-                  its large adoption lead to a lot of bad code. Innovation is
-                  very important, but most companies should focus on evolution,
-                  most problems are already solved at least half way. Engineers
-                  should be involved in requirements gathering and should
-                  prototype solutions before writing a line of code. All of this
-                  because they spend far too much time solving the wrong
-                  problems.
+                <td>Unpopular Opinions</td>
+                <td>
+                  <ul>
+                    <li>There are only two actual IAC tools.</li>
+                    <li>
+                      I like AWS the most, but most companies should use Azure.
+                      It integrates nicely with existing tech stacks.
+                    </li>
+                    <li>Excel is underrated.</li>
+                    <li>
+                      Python is my favorite language, but things in it and its
+                      large adoption lead to a large amount of bad code.
+                    </li>
+                  </ul>
                 </td>
               </tr>
             </tbody>
@@ -206,30 +199,76 @@
       </section>
       <!-- End Education -->
 
-      <section>
+      <!-- Experience -->
+      <section id="experience" class="section">
         <h2>Experience</h2>
-        <ul>
-          <li>
-            <h3>Company Name</h3>
-            <p>Job Title, Year - Year</p>
-            <ul>
+        <ul class="section-container">
+          <!-- Bayer -->
+          <li class="section-element">
+            <h3>Bayer</h3>
+            <job-header
+              job-title="Sr. Data Engineer"
+              job-dates="2020 - Current"
+            ></job-header>
+            <ul class="l-offset">
               <li>Responsibility 1</li>
               <li>Responsibility 2</li>
-              <!-- Add more responsibilities here -->
             </ul>
           </li>
-          <!-- Add more experience details here -->
+          <!--End Bayer-->
+          <!-- Clark Motor Group -->
+          <li class="section-element">
+            <h3>Clark Motor Group Ltd.</h3>
+            <job-header
+              job-title="IT Manager"
+              job-dates="2010 - Current"
+            ></job-header>
+            <ul class="l-offset">
+              <li>Responsibility 1</li>
+              <li>Responsibility 2</li>
+            </ul>
+          </li>
+          <!-- End Clark Motor Group -->
+          <li class="section-element">
+            <h3>US Bank</h3>
+            <ul>
+              <li>
+                <job-header job-title="Application Developer"></job-header>
+              </li>
+              <li>
+                <ul class="l-offset">
+                  <li>Responsibility 1</li>
+                  <li>Responsibility 2</li>
+                </ul>
+              </li>
+              <li>
+                <job-header job-title="Data Engineer"></job-header>
+              </li>
+              <li>
+                <ul class="l-offset">
+                  <li>Responsibility 1</li>
+                  <li>Responsibility 2</li>
+                </ul>
+              </li>
+              <li><job-header job-title="Lead Data Architect"></job-header></li>
+              <li>
+                <ul class="l-offset">
+                  <li>Responsibility 1</li>
+                  <li>Responsibility 2</li>
+                </ul>
+              </li>
+              <li><job-header job-title="Data Analyst"></job-header></li>
+              <li>
+                <ul class="l-offset">
+                  <li>Responsibility 1</li>
+                  <li>Responsibility 2</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </section>
-
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <!-- Add more skills here -->
-        </ul>
-      </section>
+      <!-- End Experience -->
     </main>
   </body>
 </html>
